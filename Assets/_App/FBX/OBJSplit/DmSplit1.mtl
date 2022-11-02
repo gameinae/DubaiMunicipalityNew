@@ -1,0 +1,160 @@
+newmtl airport_apronSG
+illum 4
+Kd 0.49 0.51 0.51
+Ka 0.49 0.51 0.51
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl airport_markingsSG
+illum 4
+Kd 0.95 0.71 0.00
+Ka 0.95 0.71 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl airport_runwaySG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.44 0.44 0.44
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl airport_surfaceSG
+illum 4
+Kd 0.44 0.46 0.47
+Ka 0.44 0.46 0.47
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl airport_taxiwaySG
+illum 4
+Kd 0.53 0.53 0.52
+Ka 0.53 0.53 0.52
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl fenceSG
+illum 4
+Kd 0.03 0.02 0.02
+Ka 0.03 0.02 0.02
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl landuse_airportSG
+illum 4
+Kd 0.30 0.30 0.30
+Ka 0.30 0.30 0.30
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl landuse_constructionSG
+illum 4
+Kd 0.52 0.51 0.46
+Ka 0.52 0.51 0.46
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl landuse_neighbourhoodSG
+illum 4
+Kd 0.50 0.51 0.51
+Ka 0.50 0.51 0.51
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl landuse_publicSG
+illum 4
+Kd 0.54 0.53 0.53
+Ka 0.54 0.53 0.53
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl landuse_railwaySG
+illum 4
+Kd 0.43 0.44 0.43
+Ka 0.43 0.44 0.43
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl landuse_residentialSG
+illum 4
+Kd 0.56 0.54 0.51
+Ka 0.56 0.54 0.51
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl paths_corridorSG
+illum 4
+Kd 0.85 0.85 0.85
+Ka 0.85 0.85 0.85
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl railway_monorailSG
+illum 4
+Kd 0.36 0.36 0.36
+Ka 0.36 0.36 0.36
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl roads_markingsSG
+illum 4
+Kd 0.82 0.82 0.81
+Ka 0.82 0.82 0.81
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl roads_motorwaySG
+illum 4
+Kd 0.16 0.16 0.16
+Ka 0.16 0.16 0.16
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl roads_parkingSG
+illum 4
+Kd 0.25 0.25 0.26
+Ka 0.25 0.25 0.26
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl roads_serviceSG
+illum 4
+Kd 0.28 0.28 0.28
+Ka 0.28 0.28 0.28
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl roads_trackSG
+illum 4
+Kd 0.52 0.45 0.35
+Ka 0.52 0.45 0.35
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl sidewalksSG
+illum 4
+Kd 0.64 0.64 0.64
+Ka 0.64 0.64 0.64
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
