@@ -42,6 +42,8 @@ public class MainUICanvas : MonoBehaviour
             {
                 T1.gameObject.GetComponent<Button>().onClick.AddListener(() => Highlight_Buildings(T1.gameObject.name));
                 T1.gameObject.GetComponent<Button>().onClick.AddListener(() => Get_Lat_Long(T1.gameObject.GetComponent<Building>()));
+                T1.gameObject.GetComponent<Button>().onClick.AddListener(() => T1.transform.GetChild(0).gameObject.SetActive(false));
+                
             }
         }
 
@@ -70,6 +72,8 @@ public class MainUICanvas : MonoBehaviour
         foreach (Transform T in MainSpotsCanvasNew.transform)
         {
             T.gameObject.SetActive(false);
+          
+
         }
         _buildingInfo.BuildingName.text = buildingName;
         switch (buildingName)
@@ -122,7 +126,7 @@ public class MainUICanvas : MonoBehaviour
             case "ClassHotelApartments":
                 AssignBuildingPoint(15);
                 break;
-            case "GrandCosmopolitanHotelDubaiAlBarshaAlDubaiUnitedArabEmirates":
+            case "GrandCosmopolitanHotel":
                 AssignBuildingPoint(16);
                 break;
             case "HiltonDubaiAlHabtoorCity":

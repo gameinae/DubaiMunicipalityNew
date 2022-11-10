@@ -27,14 +27,14 @@ public class UserInput : MonoBehaviour
             GameManager.Instance.GridSystem.ChangeBuildingMaterialToSelected(0, badHelathSelectedBuilding, true);
         }
 
-        //if (Input.mouseScrollDelta.y > 0 && GameManager.Instance.CameraController.isZoom)
-        //{
-        //    GameManager.Instance.CameraController.ZoomInAtCursorPosition();
-        //}
-        //if (Input.mouseScrollDelta.y < 0 && GameManager.Instance.CameraController.isZoom)
-        //{
-        //    GameManager.Instance.CameraController.ZoomOutCursorPosition();
-        //}
+        if (Input.mouseScrollDelta.y > 0 && GameManager.Instance.CameraController.isZoom)
+        {
+            GameManager.Instance.CameraController.ZoomInAtCursorPosition();
+        }
+        if (Input.mouseScrollDelta.y < 0 && GameManager.Instance.CameraController.isZoom)
+        {
+            GameManager.Instance.CameraController.ZoomOutCursorPosition();
+        }
 
 
     }
