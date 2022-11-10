@@ -60,7 +60,8 @@ public class GridSystem : MonoBehaviour
     }
     public void GoToOrigin()
     {
-       
+        MainUICanvas.instance.zoomEnabled = false;
+
         GameManager.Instance.CameraController.SetCameraBack();
        
         ChangeBuildingMaterialToOriginal();

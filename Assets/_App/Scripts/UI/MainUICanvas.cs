@@ -26,6 +26,7 @@ public class MainUICanvas : MonoBehaviour
     public Sprite[] HierarchyImagesOn, HierarchyImagesOff,SidePanelToggleSprites;
     bool SidePanelTogglebool;
     [SerializeField] Image SidePanelImg;
+    public bool zoomEnabled;
     private void Start()
     {
         foreach (Transform T in DistrictHolder.transform)
@@ -68,6 +69,7 @@ public class MainUICanvas : MonoBehaviour
     }
     public void Highlight_Buildings(string buildingName)
     {
+        MainUICanvas.instance.zoomEnabled = false;
         Debug.Log("buildingName" + buildingName);
         foreach (Transform T in MainSpotsCanvasNew.transform)
         {

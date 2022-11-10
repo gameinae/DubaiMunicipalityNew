@@ -40,6 +40,8 @@ public class DistrictButton : MonoBehaviour
     public void GoToPoint() 
     {
         Debug.Log("clkd");
+        MainUICanvas.instance.zoomEnabled = true;
+
         GameManager.Instance.GridSystem.ChangeBuildingMaterialToOriginal();
         GameManager.Instance.CameraController.isZoom = true;
         MainUICanvas.instance.DistrictIndex = districtIndex;
@@ -61,6 +63,7 @@ public class DistrictButton : MonoBehaviour
         //mainCanvas.unityAction.Invoke(districtIndex);
     }
     IEnumerator Enablespots() {
+
         yield return new WaitForSeconds(2f);
         if (!GameManager.Instance.CameraController.isZoomIn) {
             foreach (Transform T in GameManager.Instance.UIManager.mainUICanvas.MainSpotsCanvasNew.transform) {
@@ -69,5 +72,6 @@ public class DistrictButton : MonoBehaviour
             GameManager.Instance.UIManager.mainUICanvas.MainSpotsCanvasNew.transform.GetChild(districtIndex - 1)?.gameObject.SetActive(true);
         }
         GameManager.Instance.GridSystem.reset = false;
+
     }
 }
