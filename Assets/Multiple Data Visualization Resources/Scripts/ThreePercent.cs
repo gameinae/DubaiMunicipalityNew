@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class ThreePercent : MonoBehaviour
 {
-    [Range(0,9999)]
+    [Range(0,99999)]
     public float no1, no2, no3;
 
     public Image a, b, c;
@@ -36,8 +36,8 @@ public class ThreePercent : MonoBehaviour
         c.transform.localEulerAngles = -new Vector3(0, 0, 360 * p1) - new Vector3(0, 0, 360 * p2);
 
 
-        t1.text = p1 * 100 + "%";
-        t2.text = p2 * 100 + "%";
-        t3.text = p3 * 100 + "%";
+        t1.text = (p1 * 100 + "%");
+        t2.text = (p2 * 100 + "%");
+        t3.text = (p3 * 100 + "%");
     }
 }
