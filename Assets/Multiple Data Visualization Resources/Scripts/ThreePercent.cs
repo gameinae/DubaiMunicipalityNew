@@ -35,9 +35,8 @@ public class ThreePercent : MonoBehaviour
         c.fillAmount = p3;
         c.transform.localEulerAngles = -new Vector3(0, 0, 360 * p1) - new Vector3(0, 0, 360 * p2);
 
-
-        t1.text = (p1 * 100 + "%");
-        t2.text = (p2 * 100 + "%");
-        t3.text = (p3 * 100 + "%");
+        t1.text = (p1 * 100).ToString("00.00")+" %";
+        t2.text = (p2 * 100).ToString("00.00")+" %";
+        t3.text = (p3 * 100).ToString("00.00")+" %";
     }
 }

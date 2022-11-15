@@ -36,4 +36,8 @@ public class PointerDistrictHighlighter : MonoBehaviour
             districtMat.EnableKeyword("_EMISSION");
         }
     }
+    public void DisableEmissionMaterial()
+    {
+        districtMat?.DisableKeyword("_EMISSION");
+    }
 }

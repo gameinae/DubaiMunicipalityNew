@@ -13,12 +13,18 @@ public class ChartSidePanel : MonoBehaviour,IChartToggle
     public Transform MyPanelParent;
     public Button ClosePanelBtn;
     public Transform HoverPanel;
-
+    public PointerDistrictHighlighter[] districtHighliter;
+    public DistrictButton[] districtButton;
     private void Start()
     {
+        districtHighliter = FindObjectsOfType(typeof(PointerDistrictHighlighter)) as PointerDistrictHighlighter[];
+        districtButton = FindObjectsOfType(typeof(DistrictButton)) as DistrictButton[];
         myButton = gameObject.AddComponent<Button>();
         myButton.onClick.AddListener(OnClick);
+        myButton.onClick.AddListener(DisableEnvironmentInteraction);
         ClosePanelBtn?.onClick.AddListener(ClosePanel);
+        ClosePanelBtn?.onClick.AddListener(EnableEnvironmentInteraction);
+
     }
     public void OnMouseEnter()
     {
@@ -34,6 +40,29 @@ public class ChartSidePanel : MonoBehaviour,IChartToggle
         MainUICanvas.instance.RightPanel.GetComponent<SidePanel>().ClosePanelsAnim();
         PlayAnimation("close", false);
         PlayAnimation();
+    }
+    public void EnableEnvironmentInteraction()
+    {
+        for (int i = 0; i < districtHighliter.Length; i++)
+        {
+            districtHighliter[i].GetComponent<PointerDistrictHighlighter>().enabled = true;
+        }
+        for (int i = 0; i < districtButton.Length; i++)
+        {
+            districtButton[i].gameObject.SetActive(true);
+        }
+    }
+    public void DisableEnvironmentInteraction()
+    {
+        for (int i = 0; i < districtHighliter.Length; i++)
+        {
+            districtHighliter[i].GetComponent<PointerDistrictHighlighter>().enabled = false;
+            districtHighliter[i].GetComponent<PointerDistrictHighlighter>().DisableEmissionMaterial();
+        }
+        for (int i = 0; i < districtButton.Length; i++)
+        {
+            districtButton[i].gameObject.SetActive(false);
+        }
     }
     public void ClosePanel()
     {
