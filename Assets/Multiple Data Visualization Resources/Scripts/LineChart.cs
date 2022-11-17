@@ -4,12 +4,26 @@ using UnityEngine;
 
 public class LineChart : MonoBehaviour
 {
+
     public List<RectTransform> allPoint = new List<RectTransform>();
 
     public GameObject linePrefab;
 
+
     private void Start()
     {
+
+        InitPointAndLine();
+    }
+
+    void InitPointAndLine()
+    {
+        foreach (RectTransform item in transform)
+        {
+            allPoint.Add(item);
+        }
+
+
         for (int a = 0; a < allPoint.Count; a++)
         {
             if (a < allPoint.Count - 1)
@@ -17,7 +31,6 @@ public class LineChart : MonoBehaviour
                 GameObject line = GameObject.Instantiate<GameObject>(linePrefab);
                 line.transform.SetParent(allPoint[a]);
                 line.transform.localPosition = Vector3.zero;
-                //line.transform.localScale = new Vector3(1,0.3f,1);
             }
         }
     }
@@ -27,12 +40,14 @@ public class LineChart : MonoBehaviour
         UpdateLineChart();
     }
 
+ 
+
     public void UpdateLineChart()
     {
-        for (int a = 0; a < allPoint.Count; a++)
+ 
+        for (int a = 0; a < allPoint.Count-1; a++)// Thanks To NestorVG help me to fix this bug!
         {
 
-            print(allPoint[a].anchoredPosition);
             if(allPoint[a+1]!=null)
             {
                 Vector3 v = (allPoint[a + 1].anchoredPosition - allPoint[a].anchoredPosition);
@@ -41,11 +56,6 @@ public class LineChart : MonoBehaviour
                 allPoint[a].GetChild(0).right = v;
 
             }
-
-
-
-
-
         }
     }
 }

@@ -1150,7 +1150,7 @@ GameObject:
   - component: {fileID: 102126817}
   - component: {fileID: 102126816}
   m_Layer: 5
-  m_Name: Circle (7)
+  m_Name: Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2441,7 +2441,7 @@ GameObject:
   - component: {fileID: 239959856}
   - component: {fileID: 239959855}
   m_Layer: 5
-  m_Name: Circle (9)
+  m_Name: Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3207,6 +3207,7 @@ GameObject:
   - component: {fileID: 325670684}
   - component: {fileID: 325670686}
   - component: {fileID: 325670685}
+  - component: {fileID: 325670687}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -3274,6 +3275,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325670683}
   m_CullTransparentMesh: 0
+--- !u!114 &325670687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325670683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808ee3570121bca4a985bf35ae29db72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalColor: {r: 0.44313726, g: 0.6, b: 0.7764706, a: 1}
+  highlightColor: {r: 0.24313726, g: 0.8862745, b: 1, a: 1}
 --- !u!1 &326872770
 GameObject:
   m_ObjectHideFlags: 0
@@ -4827,6 +4842,7 @@ GameObject:
   - component: {fileID: 468991642}
   - component: {fileID: 468991644}
   - component: {fileID: 468991643}
+  - component: {fileID: 468991645}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -4894,6 +4910,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468991641}
   m_CullTransparentMesh: 0
+--- !u!114 &468991645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468991641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808ee3570121bca4a985bf35ae29db72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalColor: {r: 0.44313726, g: 0.6, b: 0.7764706, a: 1}
+  highlightColor: {r: 0.24313726, g: 0.8862745, b: 1, a: 1}
 --- !u!1 &469858091
 GameObject:
   m_ObjectHideFlags: 0
@@ -5140,7 +5170,7 @@ GameObject:
   - component: {fileID: 527788905}
   - component: {fileID: 527788904}
   m_Layer: 5
-  m_Name: Circle (6)
+  m_Name: Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7567,7 +7597,7 @@ GameObject:
   - component: {fileID: 855836626}
   - component: {fileID: 855836625}
   m_Layer: 5
-  m_Name: Circle (10)
+  m_Name: Point (DuplicateMeToAddPointBeforeRun)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7589,7 +7619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 772, y: 213}
+  m_AnchoredPosition: {x: 727, y: 219}
   m_SizeDelta: {x: 38, y: 38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &855836625
@@ -12602,6 +12632,7 @@ GameObject:
   - component: {fileID: 1314771192}
   - component: {fileID: 1314771194}
   - component: {fileID: 1314771193}
+  - component: {fileID: 1314771195}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -12669,6 +12700,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314771191}
   m_CullTransparentMesh: 0
+--- !u!114 &1314771195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314771191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808ee3570121bca4a985bf35ae29db72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalColor: {r: 0.44313726, g: 0.6, b: 0.7764706, a: 1}
+  highlightColor: {r: 0.24313726, g: 0.8862745, b: 1, a: 1}
 --- !u!1 &1335676816
 GameObject:
   m_ObjectHideFlags: 0
@@ -13010,7 +13055,7 @@ GameObject:
   - component: {fileID: 1376325788}
   - component: {fileID: 1376325787}
   m_Layer: 5
-  m_Name: Circle (8)
+  m_Name: Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13465,6 +13510,7 @@ GameObject:
   - component: {fileID: 1447985974}
   - component: {fileID: 1447985976}
   - component: {fileID: 1447985975}
+  - component: {fileID: 1447985977}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -13532,6 +13578,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447985973}
   m_CullTransparentMesh: 0
+--- !u!114 &1447985977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447985973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808ee3570121bca4a985bf35ae29db72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalColor: {r: 0.44313726, g: 0.6, b: 0.7764706, a: 1}
+  highlightColor: {r: 0.24313726, g: 0.8862745, b: 1, a: 1}
 --- !u!1 &1451942288
 GameObject:
   m_ObjectHideFlags: 0
@@ -16028,13 +16088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a527f91ca3081f14bb8a441fc6161393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allPoint:
-  - {fileID: 2008478724}
-  - {fileID: 527788903}
-  - {fileID: 102126815}
-  - {fileID: 1376325786}
-  - {fileID: 239959854}
-  - {fileID: 855836624}
+  allPoint: []
   linePrefab: {fileID: 5876186104514245574, guid: b0c4db96fca821348869350b0b3f957c,
     type: 3}
 --- !u!1 &1694524098
@@ -18884,7 +18938,7 @@ GameObject:
   - component: {fileID: 2008478726}
   - component: {fileID: 2008478725}
   m_Layer: 5
-  m_Name: Circle (5)
+  m_Name: Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

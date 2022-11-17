@@ -12,7 +12,7 @@ public class RandomEnableAnimator : MonoBehaviour
         if (am)
         {
             am.enabled = false;
-            float f = Random.Range(1, 5f);
+            float f = Random.Range(1, 3.5f);
             StartCoroutine("Show", f);
         }
     }

@@ -9,6 +9,7 @@ public class SwitchMenus : MonoBehaviour
     [SerializeField] List<GameObject> menus;
     [SerializeField] GameObject menu;
     [SerializeField] GameObject underline;
+    [SerializeField] bool hasUnderline = true;
 
     private void Start()
     {
@@ -21,6 +22,9 @@ public class SwitchMenus : MonoBehaviour
             menus[i].gameObject.SetActive(false);
         }
         menu.SetActive(true);
-        underline.transform.position = new Vector3(this.transform.position.x, underline.transform.position.y, underline.transform.position.y);
+        if (hasUnderline)
+        {
+            underline.transform.position = new Vector3(this.transform.position.x, underline.transform.position.y, underline.transform.position.y);
+        }
     }
 }
