@@ -11,7 +11,7 @@ public class ButtonTextColorChanger : MonoBehaviour
     {
         for (int i = 0; i < texts.Count; ++i)
         {
-            int keyIndex = i + 1;
+            int keyIndex = i;
             if (texts[i] != null)
                 texts[i].onClick.AddListener(() => ChangeTextColor(keyIndex));
         }
@@ -23,6 +23,6 @@ public class ButtonTextColorChanger : MonoBehaviour
         {
             texts[i].GetComponent<Text>().color = Color.cyan;
         }
-        texts[index - 1].GetComponent<Text>().color = Color.black;
+        texts[index].GetComponent<Text>().color = Color.black;
     }
 }
