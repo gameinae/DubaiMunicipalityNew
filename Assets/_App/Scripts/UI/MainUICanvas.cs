@@ -137,6 +137,108 @@ public class MainUICanvas : MonoBehaviour
             case "MajesticCityRetreatHotel":
                 AssignBuildingPoint(18);
                 break;
+            case "AlNaseemHotelMadinatJumeirah":
+                AssignBuildingPoint(20);
+                break;
+            case "AvenueHotel":
+                AssignBuildingPoint(21);
+                break;
+            case "BroadwayHotel":
+                AssignBuildingPoint(22);
+                break;
+            case "BurjumanArjaanByRotanaHote":
+                AssignBuildingPoint(23);
+                break;
+            case "CarltonTowerHotel":
+                AssignBuildingPoint(24);
+                break;
+            case "CenterMirageBeachResort":
+                AssignBuildingPoint(25);
+                break;
+            case "CitySeasonHotel":
+                AssignBuildingPoint(26);
+                break;
+            case "ComfortinnHotel":
+                AssignBuildingPoint(27);
+                break;
+            case "DanmacmaisoncanalviwesHotel":
+                AssignBuildingPoint(28);
+                break;
+            case "HUESBoutiqueHotel":
+                AssignBuildingPoint(29);
+                break;
+            case "HyatCreekHotel":
+                AssignBuildingPoint(30);
+                break;
+            case "HyattRegengy":
+                AssignBuildingPoint(31);
+                break;
+            case "IbisHotelAlRigga":
+                AssignBuildingPoint(32);
+                break;
+            case "ManhattanAvenueHotel":
+                AssignBuildingPoint(33);
+                break;
+            case "MillenniumPlace":
+                AssignBuildingPoint(34);
+                break;
+            case "MJMashMinaAlSalamHotel":
+                AssignBuildingPoint(35);
+                break;
+            case "MjAlQasrHotelMadinatjumeirah":
+                AssignBuildingPoint(36);
+                break;
+            case "NIHALHOTEL":
+                AssignBuildingPoint(37);
+                break;
+            case "OrchidHotel":
+                AssignBuildingPoint(38);
+                break;
+            case "OrchidVoeHotel":
+                AssignBuildingPoint(39);
+                break;
+            case "PalmBeachHotel":
+                AssignBuildingPoint(40);
+                break;
+            case "PanoramaHotelDeira":
+                AssignBuildingPoint(41);
+                break;
+            case "ParamountHotelDubai":
+                AssignBuildingPoint(42);
+                break;
+            case "RadissonBlueHotelDubaiCreekHotel":
+                AssignBuildingPoint(43);
+                break;
+            case "RevierHotel":
+                AssignBuildingPoint(44);
+                break;
+            case "RollaResidenceHotelApartment":
+                AssignBuildingPoint(45);
+                break;
+            case "RoveHotel":
+                AssignBuildingPoint(46);
+                break;
+            case "RoyalContinentalHotel":
+                AssignBuildingPoint(47);
+                break;
+            case "SavoyCentralHotel":
+                AssignBuildingPoint(48);
+                break;
+            case "Signatureinnhotel":
+                AssignBuildingPoint(49);
+                break;
+            case "SLSHotel":
+                AssignBuildingPoint(50);
+                break;
+            case "SunsandsPlazaHotel":
+                AssignBuildingPoint(51);
+                break;
+            case "TheOberoiHotel":
+                AssignBuildingPoint(52);
+                break;
+            case "WhiteFortHotel":
+                AssignBuildingPoint(53);
+                break;
             default:
                 break;
         }
