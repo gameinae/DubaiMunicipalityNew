@@ -8,6 +8,6 @@ using UnityEngine;
 public class DistrictSO : ScriptableObject
 {
     public string name;
-    public enum DistrictType { d1, d2, d3 }
+    public enum DistrictType { d1, d2, d3, d4 }
     public DistrictType district;
 }
