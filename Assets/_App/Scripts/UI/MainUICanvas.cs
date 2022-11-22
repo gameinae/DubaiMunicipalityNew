@@ -156,6 +156,10 @@ public class MainUICanvas : MonoBehaviour
                 AssignBuildingPoint(18);
                 AssignBuildingName(buildingName);
                 break;
+            case "CarltonPalaceHotel":
+                AssignBuildingPoint(19);
+                AssignBuildingName(buildingName);
+                break;
             case "AlNaseemHotelMadinatJumeirah":
                 AssignBuildingPoint(20);
                 AssignBuildingName(buildingName);
@@ -292,6 +296,10 @@ public class MainUICanvas : MonoBehaviour
                 AssignBuildingPoint(53);
                 AssignBuildingName(buildingName);
                 break;
+            case "LaperGolaMazah":
+                AssignBuildingPoint(54);
+                AssignBuildingName(buildingName);
+                break;
             default:
                 break;
         }
@@ -302,6 +310,10 @@ public class MainUICanvas : MonoBehaviour
         _buildingInfo.Latitude.text = "Latitude " + B.buildingData.nCoordinate;
         _buildingInfo.Longitude.text = "Longitude " + B.buildingData.eCoordinate;
     }
+    public void AssignBuildingName(string _buildingName)
+    {
+        GameManager.Instance.GridSystem.SetBuildingName(_buildingName);
+    }
     public void AssignBuildingPoint(int i)
     {
 
@@ -309,10 +321,6 @@ public class MainUICanvas : MonoBehaviour
         GameManager.Instance.GridSystem.ChangeBuilding(i);
         StartCoroutine(EnableInfo(i));
         SensorsPositions(i);
-    }
-    public void AssignBuildingName(string name)
-    {
-        GameManager.Instance.GridSystem.SetBuildingName(name);
     }
     IEnumerator EnableInfo(int i)
     {
