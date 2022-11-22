@@ -17,6 +17,7 @@ public class GridSystem : MonoBehaviour
     public Material selectedMaterial, mediumHelathSelectedBuilding, badHelathSelectedBuilding;
     public Material currentBuildingMaterial;
     public SearchBox searchBox;
+    public Text buildingTitleName;
 
     public bool m_isValid;
     public bool reset;
@@ -92,6 +93,10 @@ public class GridSystem : MonoBehaviour
         StartCoroutine(EnableDistricts());
         reset = false;
       //  MainUICanvas.instance.buildingName.gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
+    }
+    public void SetBuildingName(string buildingName)
+    {
+        buildingTitleName.text = buildingName;
     }
     public void ChangeBuilding(int buildingIndex)
     {

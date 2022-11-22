@@ -82,162 +82,215 @@ public class MainUICanvas : MonoBehaviour
         {
             case "BurjKhalifa":
                 AssignBuildingPoint(0);
+                AssignBuildingName(buildingName);
                 break;
             case "PalmHotel":
                 AssignBuildingPoint(1);
+                AssignBuildingName(buildingName);
                 break;
             case "AddressSkyView":
                 AssignBuildingPoint(2);
+                AssignBuildingName(buildingName);
                 break;
             case "HolidayInnHotel":
                 AssignBuildingPoint(3);
+                AssignBuildingName(buildingName);
                 break;
             case "Mercure":
                 AssignBuildingPoint(4);
+                AssignBuildingName(buildingName);
                 break;
             case "Sheraton":
                 AssignBuildingPoint(5);
+                AssignBuildingName(buildingName);
                 break;
             case "Kempinski":
                 AssignBuildingPoint(6);
+                AssignBuildingName(buildingName);
                 break;
             case "DusitD2KenzHotel":
                 AssignBuildingPoint(7);
+                AssignBuildingName(buildingName);
                 break;
             case "MediaByRotana":
                 AssignBuildingPoint(8);
+                AssignBuildingName(buildingName);
                 break;
             case "IBIS&NovotelHotel":
                 AssignBuildingPoint(9);
+                AssignBuildingName(buildingName);
                 break;
             case "NaraCafe":
                 AssignBuildingPoint(10);
+                AssignBuildingName(buildingName);
                 break;
             case "LeMeridien":
                 AssignBuildingPoint(11);
+                AssignBuildingName(buildingName);
                 break;
             case "WyndhamDubaiMarina":
                 AssignBuildingPoint(12);
+                AssignBuildingName(buildingName);
                 break;
             case "MazahRestaurant":
                 AssignBuildingPoint(13);
+                AssignBuildingName(buildingName);
                 break;
             case "FirstCentralHotelSuites":
                 AssignBuildingPoint(14);
+                AssignBuildingName(buildingName);
                 break;
             case "ClassHotelApartments":
                 AssignBuildingPoint(15);
+                AssignBuildingName(buildingName);
                 break;
             case "GrandCosmopolitanHotel":
                 AssignBuildingPoint(16);
+                AssignBuildingName(buildingName);
                 break;
             case "HiltonDubaiAlHabtoorCity":
                 AssignBuildingPoint(17);
+                AssignBuildingName(buildingName);
                 break;
             case "MajesticCityRetreatHotel":
                 AssignBuildingPoint(18);
+                AssignBuildingName(buildingName);
                 break;
             case "AlNaseemHotelMadinatJumeirah":
                 AssignBuildingPoint(20);
+                AssignBuildingName(buildingName);
                 break;
             case "AvenueHotel":
                 AssignBuildingPoint(21);
+                AssignBuildingName(buildingName);
                 break;
             case "BroadwayHotel":
                 AssignBuildingPoint(22);
+                AssignBuildingName(buildingName);
                 break;
             case "BurjumanArjaanByRotanaHote":
                 AssignBuildingPoint(23);
+                AssignBuildingName(buildingName);
                 break;
             case "CarltonTowerHotel":
                 AssignBuildingPoint(24);
+                AssignBuildingName(buildingName);
                 break;
             case "CenterMirageBeachResort":
                 AssignBuildingPoint(25);
+                AssignBuildingName(buildingName);
                 break;
             case "CitySeasonHotel":
                 AssignBuildingPoint(26);
+                AssignBuildingName(buildingName);
                 break;
             case "ComfortinnHotel":
                 AssignBuildingPoint(27);
+                AssignBuildingName(buildingName);
                 break;
             case "DanmacmaisoncanalviwesHotel":
                 AssignBuildingPoint(28);
+                AssignBuildingName(buildingName);
                 break;
             case "HUESBoutiqueHotel":
                 AssignBuildingPoint(29);
+                AssignBuildingName(buildingName);
                 break;
             case "HyatCreekHotel":
                 AssignBuildingPoint(30);
+                AssignBuildingName(buildingName);
                 break;
             case "HyattRegengy":
                 AssignBuildingPoint(31);
+                AssignBuildingName(buildingName);
                 break;
             case "IbisHotelAlRigga":
                 AssignBuildingPoint(32);
+                AssignBuildingName(buildingName);
                 break;
             case "ManhattanAvenueHotel":
                 AssignBuildingPoint(33);
+                AssignBuildingName(buildingName);
                 break;
             case "MillenniumPlace":
                 AssignBuildingPoint(34);
+                AssignBuildingName(buildingName);
                 break;
             case "MJMashMinaAlSalamHotel":
                 AssignBuildingPoint(35);
+                AssignBuildingName(buildingName);
                 break;
             case "MjAlQasrHotelMadinatjumeirah":
                 AssignBuildingPoint(36);
+                AssignBuildingName(buildingName);
                 break;
             case "NIHALHOTEL":
                 AssignBuildingPoint(37);
+                AssignBuildingName(buildingName);
                 break;
             case "OrchidHotel":
                 AssignBuildingPoint(38);
+                AssignBuildingName(buildingName);
                 break;
             case "OrchidVoeHotel":
                 AssignBuildingPoint(39);
+                AssignBuildingName(buildingName);
                 break;
             case "PalmBeachHotel":
                 AssignBuildingPoint(40);
+                AssignBuildingName(buildingName);
                 break;
             case "PanoramaHotelDeira":
                 AssignBuildingPoint(41);
+                AssignBuildingName(buildingName);
                 break;
             case "ParamountHotelDubai":
                 AssignBuildingPoint(42);
+                AssignBuildingName(buildingName);
                 break;
             case "RadissonBlueHotelDubaiCreekHotel":
                 AssignBuildingPoint(43);
+                AssignBuildingName(buildingName);
                 break;
             case "RevierHotel":
                 AssignBuildingPoint(44);
+                AssignBuildingName(buildingName);
                 break;
             case "RollaResidenceHotelApartment":
                 AssignBuildingPoint(45);
+                AssignBuildingName(buildingName);
                 break;
             case "RoveHotel":
                 AssignBuildingPoint(46);
+                AssignBuildingName(buildingName);
                 break;
             case "RoyalContinentalHotel":
                 AssignBuildingPoint(47);
+                AssignBuildingName(buildingName);
                 break;
             case "SavoyCentralHotel":
                 AssignBuildingPoint(48);
+                AssignBuildingName(buildingName);
                 break;
             case "Signatureinnhotel":
                 AssignBuildingPoint(49);
+                AssignBuildingName(buildingName);
                 break;
             case "SLSHotel":
                 AssignBuildingPoint(50);
+                AssignBuildingName(buildingName);
                 break;
             case "SunsandsPlazaHotel":
                 AssignBuildingPoint(51);
+                AssignBuildingName(buildingName);
                 break;
             case "TheOberoiHotel":
                 AssignBuildingPoint(52);
+                AssignBuildingName(buildingName);
                 break;
             case "WhiteFortHotel":
                 AssignBuildingPoint(53);
+                AssignBuildingName(buildingName);
                 break;
             default:
                 break;
@@ -256,6 +309,10 @@ public class MainUICanvas : MonoBehaviour
         GameManager.Instance.GridSystem.ChangeBuilding(i);
         StartCoroutine(EnableInfo(i));
         SensorsPositions(i);
+    }
+    public void AssignBuildingName(string name)
+    {
+        GameManager.Instance.GridSystem.SetBuildingName(name);
     }
     IEnumerator EnableInfo(int i)
     {
