@@ -10,6 +10,6 @@ public class BuildingsSO : ScriptableObject
     public Material material;
     public float nCoordinate;
     public float eCoordinate;
-    public enum DistrictType { d1,d2,d3,d4}
+    public enum DistrictType { d1, d2, d3, d4, d5, d6, d7, d8 }
     public DistrictType district;
 }
