@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - UseCaseOption
+  - LeaderBoardMemberHealthPercentage
+  - LeaderBoardMemberName
   layers:
   - Default
   - TransparentFX
@@ -12,7 +14,7 @@ TagManager:
   - pp
   - Water
   - UI
-  - 
+  - WorldUI
   - 
   - 
   - 
@@ -41,4 +43,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: NOprocess
+    uniqueID: 806623045
     locked: 0
