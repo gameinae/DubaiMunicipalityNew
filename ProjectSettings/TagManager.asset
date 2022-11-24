@@ -7,6 +7,9 @@ TagManager:
   - UseCaseOption
   - LeaderBoardMemberHealthPercentage
   - LeaderBoardMemberName
+  - SepticTankPanels
+  - FogTrapPanels
+  - PiplinePanels
   layers:
   - Default
   - TransparentFX
