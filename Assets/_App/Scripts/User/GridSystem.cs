@@ -61,6 +61,7 @@ public class GridSystem : MonoBehaviour
     }
     public void GoToOrigin()
     {
+        ToogleHighliting.instance.EnableDistrictHigligting();
         MainUICanvas.instance.zoomEnabled = false;
 
         GameManager.Instance.CameraController.SetCameraBack();
