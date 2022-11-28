@@ -43,7 +43,7 @@ public class PointerSubDistrictsHighlighter : MonoBehaviour
 
             subDistrictMat = value;
             var color = value.color;
-            color.a = 1;
+            color.a = 0.7f;
 
             subDistrictMat.color = color;
 
