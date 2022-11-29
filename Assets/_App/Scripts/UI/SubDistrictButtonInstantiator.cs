@@ -17,20 +17,21 @@ public class SubDistrictButtonInstantiator : MonoBehaviour
         {
             subDistricts = this.GetComponentsInChildren<Collider>().ToList();
             cameraPositions = cameraParent.GetComponentsInChildren<Transform>().ToList();
+            cameraPositions.RemoveAt(0);
 
             for (int i = 0; i < subDistricts.Count; i++)
             {
                 Instantiate(subDistrictButton, subDistricts[i].transform);
             }
+            for (int i = 0; i < subDistricts.Count; i++)
+            {
+                subDistricts[i].GetComponentInChildren<Button>().onClick.AddListener(() => GoToSubDistrictPosition(cameraPositions[i]));
+            }
         }
     }
     private void Start()
     {
-        for (int i = 0; i < subDistricts.Count; i++)
-        {
-            subDistricts[i].GetComponentInChildren<Button>().onClick.AddListener(() => GoToSubDistrictPosition(cameraPositions[i]));
-        }
-
+       
     }
     public void GoToSubDistrictPosition(Transform subDistrictCameraPosition)
     {
