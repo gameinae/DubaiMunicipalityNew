@@ -28,6 +28,7 @@ public class GridSystem : MonoBehaviour
     public PostProcessVolume volume;
     private Bloom bloom = null;
 
+    public PointerSubDistrictsHighlighter pointerSubDistrictsHighlighter;
     //runtime 
     // private Building target;
     private List<IleaderBoardMember> boardMembers = new List<IleaderBoardMember>();
@@ -61,6 +62,7 @@ public class GridSystem : MonoBehaviour
     }
     public void GoToOrigin()
     {
+        GameManager.Instance.GridSystem.pointerSubDistrictsHighlighter.gameObject.SetActive(true);
         ToogleHighliting.instance.EnableDistrictHigligting();
         MainUICanvas.instance.zoomEnabled = false;
 

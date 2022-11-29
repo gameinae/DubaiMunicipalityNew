@@ -319,9 +319,13 @@ public class MainUICanvas : MonoBehaviour
 
         GameManager.Instance.CameraController.MoveCameraToCertainPoint(BuildingsCamPositions.transform.GetChild(i).transform, false, 800);
         GameManager.Instance.GridSystem.ChangeBuilding(i);
+        GameManager.Instance.GridSystem.pointerSubDistrictsHighlighter.DisableColorMaterial();
+        GameManager.Instance.GridSystem.pointerSubDistrictsHighlighter.gameObject.SetActive(false);
+        
         StartCoroutine(EnableInfo(i));
         SensorsPositions(i);
     }
+
     IEnumerator EnableInfo(int i)
     {
         yield return new WaitForSeconds(2.5f);

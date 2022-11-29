@@ -13,12 +13,15 @@ public class SubDistrictButtonInstantiator : MonoBehaviour
     public float travelSpeed;
     private void Awake()
     {
-        subDistricts = this.GetComponentsInChildren<Collider>().ToList();
-        cameraPositions = cameraParent.GetComponentsInChildren<Transform>().ToList();
-
-        for (int i = 0; i < subDistricts.Count; i++)
+        if (this.enabled)
         {
-            Instantiate(subDistrictButton, subDistricts[i].transform);
+            subDistricts = this.GetComponentsInChildren<Collider>().ToList();
+            cameraPositions = cameraParent.GetComponentsInChildren<Transform>().ToList();
+
+            for (int i = 0; i < subDistricts.Count; i++)
+            {
+                Instantiate(subDistrictButton, subDistricts[i].transform);
+            }
         }
     }
     private void Start()

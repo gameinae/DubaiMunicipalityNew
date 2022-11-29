@@ -49,8 +49,16 @@ public class PointerSubDistrictsHighlighter : MonoBehaviour
 
         }
     }
-    public void DisableEmissionMaterial()
+    public void DisableColorMaterial(Material value)
     {
-        //subDistrictMat?.DisableKeyword("_EMISSION");
+        var color0 = value.color;
+        color0.a = 0;
+        subDistrictMat = subDistrictMat == null ? value : subDistrictMat;
+    }
+    public void DisableColorMaterial()
+    {
+        var color0 = subDistrictMat.color;
+        color0.a = 0;
+        subDistrictMat.color = color0;
     }
 }
