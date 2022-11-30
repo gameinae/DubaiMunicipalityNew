@@ -39,4 +39,11 @@ public class ToogleHighliting : MonoBehaviour
         districts.SetActive(false);
         subDistricts.SetActive(true);
     }
+    public void EnableBuildingsUI()
+    {
+
+        districts.SetActive(false);
+        subDistricts.SetActive(false);
+        // add building UI to be activated
+    }
 }
