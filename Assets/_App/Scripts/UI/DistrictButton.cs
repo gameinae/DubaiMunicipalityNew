@@ -50,14 +50,17 @@ public class DistrictButton : MonoBehaviour
         GameManager.Instance.GridSystem.reset = true;
         GameManager.Instance.CameraController.MoveCameraToCertainPoint(point, false, travelSpeed);
         GameManager.Instance.CameraController.currentZoomOutTarget = point;
-        foreach (Transform T in GameManager.Instance.UIManager.mainUICanvas.DistrictsCanvasNew.transform.GetChild(0).transform)
-        {
-            T.gameObject.GetComponent<Image>().enabled = false;
-            if (T.gameObject.transform.GetChild(0).gameObject != null) T.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        GameManager.Instance.UIManager.mainUICanvas.DeactivateDistricts();
+        //foreach (Transform T in GameManager.Instance.UIManager.mainUICanvas.DistrictsCanvasNew.transform.GetChild(0).transform)
+        //{
+        //    T.gameObject.GetComponent<Image>().enabled = false;
+        //    if (T.gameObject.transform.GetChild(0).gameObject != null) T.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        // StartCoroutine(Enablespots());
+        
 
-        }
-        StartCoroutine(Enablespots());
+        //}
     }
+ 
     private void ChangeZoomDistrict()
     {
         var mainCanvas = GameManager.Instance.UIManager.mainUICanvas;
@@ -65,19 +68,19 @@ public class DistrictButton : MonoBehaviour
         if (mainCanvas.ZoomOut != null) mainCanvas.ZoomOut.GetComponent<ZoomButton>().DistrictIndex = districtIndex;
         //mainCanvas.unityAction.Invoke(districtIndex);
     }
-    IEnumerator Enablespots()
-    {
+    //IEnumerator Enablespots()
+    //{
 
-        yield return new WaitForSeconds(2f);
-        if (!GameManager.Instance.CameraController.isZoomIn)
-        {
-            foreach (Transform T in GameManager.Instance.UIManager.mainUICanvas.MainSpotsCanvasNew.transform)
-            {
-                T?.gameObject.SetActive(false);
-            }
-            GameManager.Instance.UIManager.mainUICanvas.MainSpotsCanvasNew.transform.GetChild(districtIndex - 1)?.gameObject.SetActive(true);
-        }
-        GameManager.Instance.GridSystem.reset = false;
+    //    yield return new WaitForSeconds(2f);
+    //    if (!GameManager.Instance.CameraController.isZoomIn)
+    //    {
+    //        foreach (Transform T in GameManager.Instance.UIManager.mainUICanvas.MainSpotsCanvasNew.transform)
+    //        {
+    //            T?.gameObject.SetActive(false);
+    //        }
+    //        GameManager.Instance.UIManager.mainUICanvas.MainSpotsCanvasNew.transform.GetChild(districtIndex - 1)?.gameObject.SetActive(true);
+    //    }
+    //    GameManager.Instance.GridSystem.reset = false;
 
-    }
+    //}
 }

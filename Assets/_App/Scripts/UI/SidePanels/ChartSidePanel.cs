@@ -47,10 +47,10 @@ public class ChartSidePanel : MonoBehaviour,IChartToggle
         {
             districtHighliter[i].GetComponent<PointerDistrictHighlighter>().enabled = true;
         }
-        for (int i = 0; i < districtButton.Length; i++)
-        {
-            districtButton[i].gameObject.SetActive(true);
-        }
+        //for (int i = 0; i < districtButton.Length; i++)
+        //{
+        //    districtButton[i].gameObject.SetActive(true);
+        //}
     }
     public void DisableEnvironmentInteraction()
     {

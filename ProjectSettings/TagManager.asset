@@ -12,6 +12,7 @@ TagManager:
   - PiplinePanels
   - SubDistrict
   - Districts
+  - SubDistrictsCanvas
   layers:
   - Default
   - TransparentFX

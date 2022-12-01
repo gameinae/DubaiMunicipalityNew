@@ -33,10 +33,10 @@ public class MainUICanvas : MonoBehaviour
         {
             T.gameObject.GetComponent<Button>().onClick.AddListener(() => Highlight_Districts(T.gameObject));
         }
-        foreach (Transform T in MainSpotsCanvasNew.transform)
-        {
-            T.gameObject.SetActive(false);
-        }
+        //foreach (Transform T in MainSpotsCanvasNew.transform)
+        //{
+        //    T.gameObject.SetActive(false);
+        //}
         for (int i = 0; i < MainSpotsCanvasNew.transform.childCount; i++)
         {
             foreach (Transform T1 in MainSpotsCanvasNew.transform.GetChild(i).transform.GetChild(0).transform)
@@ -49,7 +49,6 @@ public class MainUICanvas : MonoBehaviour
         }
 
     }
-
     private void Awake()
     {
         if (instance==null)
@@ -66,6 +65,30 @@ public class MainUICanvas : MonoBehaviour
         HierarchyImages[0].sprite = HierarchyImagesOn[0];
         HierarchyImages[1].sprite = HierarchyImagesOn[1];
         HierarchyImages[2].sprite = HierarchyImagesOff[2];
+    }
+    public void DeactivateDistricts()
+    {
+        DistrictHolder.GetComponent<CanvasGroup>().interactable=false;
+        DistrictHolder.GetComponent<CanvasGroup>().blocksRaycasts = false;
+        DistrictHolder.GetComponent<CanvasGroup>().alpha = 0;
+    }
+    public void ActivateDistrictsInvoker()
+    {
+        Invoke("ActivateDistricts", 2);
+    }
+
+    void ActivateDistricts()
+    {
+        DistrictHolder.GetComponent<CanvasGroup>().interactable = true;
+        DistrictHolder.GetComponent<CanvasGroup>().blocksRaycasts = true;
+        DistrictHolder.GetComponent<CanvasGroup>().alpha = 1;
+    }
+   public void ActivateBuildingUI()
+    {
+        foreach (Transform T in MainSpotsCanvasNew.transform)
+        {
+            T.gameObject.SetActive(true);
+        }
     }
     public void Highlight_Buildings(string buildingName)
     {

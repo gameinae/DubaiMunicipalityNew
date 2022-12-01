@@ -60,14 +60,15 @@ public class GridSystem : MonoBehaviour
     {
         volume.profile.TryGetSettings(out bloom);
     }
+
     public void GoToOrigin()
     {
+        GameManager.Instance.UIManager.mainUICanvas.ActivateDistrictsInvoker();
         GameManager.Instance.GridSystem.pointerSubDistrictsHighlighter.gameObject.SetActive(true);
         ToogleHighliting.instance.EnableDistrictHigligting();
         MainUICanvas.instance.zoomEnabled = false;
-
         GameManager.Instance.CameraController.SetCameraBack();
-       
+
         ChangeBuildingMaterialToOriginal();
 
         if (GameManager.Instance.UIManager.mainUICanvas.animator != null)
@@ -93,7 +94,7 @@ public class GridSystem : MonoBehaviour
         //{
         //    T.gameObject.SetActive(false);
         //}
-        StartCoroutine(EnableDistricts());
+        //StartCoroutine(EnableDistricts());
         reset = false;
       //  MainUICanvas.instance.buildingName.gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
     }
@@ -145,15 +146,13 @@ public class GridSystem : MonoBehaviour
     {
         GameManager.Instance.UIManager.mainUICanvas.ChangeDistrictNameInAdress(currentDistrictName);
     }
-    IEnumerator EnableDistricts()
-    {
-        yield return new WaitForSeconds(2f);
-        foreach (Transform T in GameManager.Instance.UIManager.mainUICanvas.DistrictsCanvasNew.transform.GetChild(0).transform)
-        {
-            T.gameObject.GetComponent<Image>().enabled = true;
-            T.gameObject.transform.GetChild(0).gameObject.SetActive(true);
-        }
-       
-
-    }
+    //IEnumerator EnableDistricts()
+    //{
+    //    yield return new WaitForSeconds(2f);
+    //    foreach (Transform T in GameManager.Instance.UIManager.mainUICanvas.DistrictsCanvasNew.transform.GetChild(0).transform)
+    //    {
+    //        T.gameObject.GetComponent<Image>().enabled = true;
+    //        T.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+    //    }
+    //}
 }
