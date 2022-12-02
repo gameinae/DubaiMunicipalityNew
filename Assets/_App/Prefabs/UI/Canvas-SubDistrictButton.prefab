@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 1413345416044833836}
   - component: {fileID: 1413345416044833837}
   - component: {fileID: -5960063121970060505}
+  - component: {fileID: -347148984212759718}
   m_Layer: 0
   m_Name: Canvas-SubDistrictButton
   m_TagString: SubDistrictsCanvas
@@ -233,3 +234,16 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &-347148984212759718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413345416044833838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a7d5574e1d966c458949e7ec9747573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FirstPersonCamera: {fileID: 0}

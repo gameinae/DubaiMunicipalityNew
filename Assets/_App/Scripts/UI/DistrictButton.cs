@@ -43,7 +43,7 @@ public class DistrictButton : MonoBehaviour
     {
         Debug.Log("clkd");
         MainUICanvas.instance.zoomEnabled = true;
-        ToogleHighliting.instance.EnableSubDistrictHigligting();
+        ToogleHighliting.instance.EnableSubDistrictHigligtingInvoker();
         GameManager.Instance.GridSystem.ChangeBuildingMaterialToOriginal();
         GameManager.Instance.CameraController.isZoom = true;
         MainUICanvas.instance.DistrictIndex = districtIndex;

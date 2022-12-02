@@ -31,18 +31,31 @@ public class ToogleHighliting : MonoBehaviour
         subDistricts.SetActive(false);
     }
 
-    public void EnableDistrictHigligting()
+    public void EnableDistrictHigligtingInvoker()
+    {
+        Invoke("EnableDistrictHigligting", 2f);
+    }
+    void EnableDistrictHigligting()
     {
         districts.SetActive(true);
         subDistricts.SetActive(false);
     }
-    public void EnableSubDistrictHigligting()
+    public void EnableSubDistrictHigligtingInvoker()
+    {
+        Invoke("EnableSubDistrictHigligting", 2f);
+    }
+    void EnableSubDistrictHigligting()
     {
 
         districts.SetActive(false);
         subDistricts.SetActive(true);
     }
-    public void EnableBuildingsUI()
+
+    public void EnableBuildingsUIInvoker()
+    {
+        Invoke("EnableBuildingsUI", 0.5f);
+    }
+    void EnableBuildingsUI()
     {
         districts.SetActive(false);
         subDistricts.SetActive(false);

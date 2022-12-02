@@ -38,7 +38,7 @@ public class SubDistrictButtonInstantiator : MonoBehaviour
     public void GoToSubDistrictPosition(Transform subDistrictCameraPosition)
     {
         Debug.Log("subDistrict btn pressed");
-        ToogleHighliting.instance.EnableBuildingsUI();
+        ToogleHighliting.instance.EnableBuildingsUIInvoker();
         GameManager.Instance.CameraController.MoveCameraToCertainPoint(subDistrictCameraPosition, false, travelSpeed);
     }
 }
